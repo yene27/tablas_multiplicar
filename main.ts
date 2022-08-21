@@ -1,6 +1,3 @@
-input.onLogoEvent(TouchButtonEvent.Pressed, function () {
-    music.playSoundEffect(music.builtinSoundEffect(soundExpression.spring), SoundExpressionPlayMode.UntilDone)
-})
 input.onButtonPressed(Button.A, function () {
     numero += 1
     basic.showNumber(numero)
@@ -15,7 +12,7 @@ function multiplicar (núm: number) {
     contador = 1
     music.playSoundEffect(music.builtinSoundEffect(soundExpression.giggle), SoundExpressionPlayMode.UntilDone)
     for (let index = 0; index < 5; index++) {
-        basic.showString("" + contador + "=" + contador * numero)
+        basic.showString("x" + contador + "=" + contador * numero)
         basic.pause(500)
         contador += 1
     }
